@@ -123,16 +123,16 @@ export default defineConfig({
     port: 8080,
     proxy: {
       '/api': {
-        target: 'http://127.0.0.1:3000',
+        target: 'http://127.0.0.1:3020',
         changeOrigin: true
       },
       '/exportfile': {
-        target: 'http://127.0.0.1:3000',
+        target: 'http://127.0.0.1:3020',
         changeOrigin: true
       },
       // 静态文件的默认存储文件夹
       '/userUpload': {
-        target: 'http://127.0.0.1:3000',
+        target: 'http://127.0.0.1:3020',
         changeOrigin: true
       }
     }
